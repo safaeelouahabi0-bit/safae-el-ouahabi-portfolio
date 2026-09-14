@@ -11,8 +11,6 @@ la création de sites et les nouvelles technologies.
 Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP.";
 
 
-// ===== DOCUMENTS / PROJETS =====
-// كل مرة بغيتي تزيدي document جديد، زيديه هنا فقط.
 
 $documents = [
 
