@@ -1,14 +1,56 @@
+<?php
+
+// ===== INFORMATIONS DE SAFae =====
+
+$nom = "Safae";
+
+$formation = "Étudiante en Développement Digital";
+
+$description = "Je suis une étudiante passionnée par le développement web,
+la création de sites et les nouvelles technologies.
+Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP.";
+
+
+// ===== DOCUMENTS / PROJETS =====
+// كل مرة بغيتي تزيدي document جديد، زيديه هنا فقط.
+
+$documents = [
+
+    [
+        "nom" => "Portfolio",
+        "description" => "Création de mon portfolio personnel.",
+        "fichier" => "docs/portfolio.pdf"
+    ],
+
+    [
+        "nom" => "Projet Shiny Brand",
+        "description" => "Création d'un site web statique pour Shiny Brand.",
+        "fichier" => "docs/shiny-brand.pdf"
+    ],
+
+    [
+        "nom" => "Projet HTML CSS",
+        "description" => "Projet réalisé avec HTML et CSS.",
+        "fichier" => "docs/html-css.pdf"
+    ]
+
+];
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio - Safae</title>
+    <title>Portfolio - <?php echo $nom; ?></title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -32,22 +74,23 @@
             background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #d88ba8;
-}
 
-.logo img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #f1b6ca;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #d88ba8;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #f1b6ca;
+        }
 
         nav a {
             text-decoration: none;
@@ -75,7 +118,7 @@
             width: 55%;
         }
 
-        .home-text p:first-child {
+        .welcome {
             color: #d88ba8;
             font-size: 18px;
             margin-bottom: 15px;
@@ -98,7 +141,7 @@
             margin-bottom: 20px;
         }
 
-        .home-text p {
+        .description {
             font-size: 17px;
             line-height: 1.7;
             color: #666;
@@ -106,7 +149,7 @@
             margin-bottom: 30px;
         }
 
-        /* ===== BOUTON ===== */
+        /* ===== BOUTONS ===== */
 
         .btn {
             display: inline-block;
@@ -191,76 +234,123 @@
                 height: 220px;
                 font-size: 70px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- ===== HEADER ===== -->
 
-    <header>
+<!-- ===== HEADER ===== -->
 
-       <div class="logo">
-    <img src="images/safae.jpg" alt="Photo de Safae">
-    <span>Safae</span>
-</div>
+<header>
 
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-            <a href="projects.html">Projets</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <div class="logo">
 
-    </header>
+        <img src="images/safae.jpg" alt="Photo de Safae">
+
+        <span>
+            <?php echo $nom; ?>
+        </span>
+
+    </div>
 
 
-    <!-- ===== SECTION ACCUEIL ===== -->
+    <nav>
 
-    <section class="home">
+        <a href="index.php">
+            Accueil
+        </a>
 
-        <div class="home-text">
+        <a href="about.php">
+            À propos
+        </a>
 
-            <p>Bienvenue sur mon portfolio ✨</p>
+        <a href="projects.php">
+            Projets
+        </a>
 
-            <h1>
-                Bonjour, je suis <span>Safae</span>
-            </h1>
+        <a href="contact.php">
+            Contact
+        </a>
 
-            <h2>
-                Étudiante en Développement Digital
-            </h2>
+    </nav>
 
-            <p>
-                Je suis une étudiante passionnée par le développement web,
-                la création de sites et les nouvelles technologies.
-                Je développe progressivement mes compétences en HTML,
-                CSS, JavaScript et PHP.
-            </p>
+</header>
 
-            <a href="projects.html" class="btn">
-                Voir mes projets
-            </a>
 
-            <a href="contact.html" class="btn btn2">
-                Me contacter
-            </a>
+<!-- ===== SECTION ACCUEIL ===== -->
+
+<section class="home">
+
+
+    <div class="home-text">
+
+        <p class="welcome">
+            Bienvenue sur mon portfolio ✨
+        </p>
+
+
+        <h1>
+
+            Bonjour, je suis
+
+            <span>
+                <?php echo $nom; ?>
+            </span>
+
+        </h1>
+
+
+        <h2>
+            <?php echo $formation; ?>
+        </h2>
+
+
+        <p class="description">
+
+            <?php echo $description; ?>
+
+        </p>
+
+
+        <a href="projects.php" class="btn">
+
+            Voir mes projets
+
+        </a>
+
+
+        <a href="contact.php" class="btn btn2">
+
+            Me contacter
+
+        </a>
+
+
+    </div>
+
+
+    <!-- ===== PHOTO ===== -->
+
+    <div class="home-image">
+
+        <div class="circle">
+
+            💻
 
         </div>
 
+    </div>
 
-        <!-- ===== IMAGE / PHOTO ===== -->
+    
 
-        <div class="home-image">
+</section>
 
-            <div class="circle">
-                💻
-            </div>
-
-        </div>
-
-    </section>
 
 </body>
 
