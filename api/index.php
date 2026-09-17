@@ -268,7 +268,7 @@ $documents = [
             À propos
         </a>
 
-        <a href="projects.php">
+        <a href="doc.php">
             Projets
         </a>
 
@@ -316,7 +316,7 @@ $documents = [
         </p>
 
 
-        <a href="projects.php" class="btn">
+        <a href="doc.php" class="btn">
 
             Voir mes projets
 
