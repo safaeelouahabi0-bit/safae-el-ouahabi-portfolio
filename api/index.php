@@ -255,12 +255,25 @@ Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP."
         </p>
 
         <a href="/doc/IMG_9539.JPG" class="btn">
-            Voir mes projets
+           tp diagramme de classe
         </a>
 
-        <a href="/contact.php" class="btn btn2">
-            Me contacter
+        <a href="/doc/IMG_9540.JPG" class="btn">
+           tp diagramme de cas d utilisation
         </a>
+        
+        <a href="/doc/IMG_9551.JPG" class="btn">
+           tp diagramme de sequence
+        </a>
+        
+        <a href="/doc/IMG_9542.JPG" class="btn">
+           tp diagramme d`etat de transition
+        </a>
+        
+        <a href="/doc/IMG_9553.JPG" class="btn">
+           tp diagramme d`activites
+        </a>
+        
 
     </div>
 
