@@ -1,6 +1,6 @@
 <?php
 
-// ===== INFORMATIONS DE SAFae =====
+// ===== INFORMATIONS DE SAFAE =====
 
 $nom = "Safae";
 
@@ -9,30 +9,6 @@ $formation = "Étudiante en Développement Digital";
 $description = "Je suis une étudiante passionnée par le développement web,
 la création de sites et les nouvelles technologies.
 Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP.";
-
-
-
-$documents = [
-
-    [
-        "nom" => "Portfolio",
-        "description" => "Création de mon portfolio personnel.",
-        "fichier" => "docs/portfolio.pdf"
-    ],
-
-    [
-        "nom" => "Projet Shiny Brand",
-        "description" => "Création d'un site web statique pour Shiny Brand.",
-        "fichier" => "docs/shiny-brand.pdf"
-    ],
-
-    [
-        "nom" => "Projet HTML CSS",
-        "description" => "Projet réalisé avec HTML et CSS.",
-        "fichier" => "docs/html-css.pdf"
-    ]
-
-];
 
 ?>
 
@@ -61,8 +37,6 @@ $documents = [
             color: #333;
         }
 
-        /* ===== NAVBAR ===== */
-
         header {
             width: 100%;
             padding: 20px 8%;
@@ -70,7 +44,7 @@ $documents = [
             justify-content: space-between;
             align-items: center;
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .logo {
@@ -101,8 +75,6 @@ $documents = [
         nav a:hover {
             color: #d88ba8;
         }
-
-        /* ===== ACCUEIL ===== */
 
         .home {
             min-height: 90vh;
@@ -147,8 +119,6 @@ $documents = [
             margin-bottom: 30px;
         }
 
-        /* ===== BOUTONS ===== */
-
         .btn {
             display: inline-block;
             padding: 13px 25px;
@@ -176,8 +146,6 @@ $documents = [
             color: white;
         }
 
-        /* ===== PHOTO ===== */
-
         .home-image {
             width: 35%;
             display: flex;
@@ -193,10 +161,8 @@ $documents = [
             justify-content: center;
             align-items: center;
             font-size: 100px;
-            box-shadow: 0 10px 30px rgba(216, 139, 168, 0.2);
+            box-shadow: 0 10px 30px rgba(216,139,168,0.2);
         }
-
-        /* ===== RESPONSIVE ===== */
 
         @media (max-width: 768px) {
 
@@ -232,24 +198,19 @@ $documents = [
                 height: 220px;
                 font-size: 70px;
             }
-
         }
 
     </style>
 
 </head>
 
-
 <body>
-
-
-<!-- ===== HEADER ===== -->
 
 <header>
 
     <div class="logo">
 
-        <img src="images/safae.jpg" alt="Photo de Safae">
+        <img src="/images/safae.jpg" alt="Photo de Safae">
 
         <span>
             <?php echo $nom; ?>
@@ -257,34 +218,22 @@ $documents = [
 
     </div>
 
-
     <nav>
 
-        <a href="index.php">
-            Accueil
-        </a>
+        <a href="/">Accueil</a>
 
-        <a href="about.php">
-            À propos
-        </a>
+        <a href="/">À propos</a>
 
-        <a href="doc.php">
-            Projets
-        </a>
+        <a href="/doc.php">Projets</a>
 
-        <a href="contact.php">
-            Contact
-        </a>
+        <a href="/contact.php">Contact</a>
 
     </nav>
 
 </header>
 
 
-<!-- ===== SECTION ACCUEIL ===== -->
-
 <section class="home">
-
 
     <div class="home-text">
 
@@ -292,63 +241,38 @@ $documents = [
             Bienvenue sur mon portfolio ✨
         </p>
 
-
         <h1>
-
             Bonjour, je suis
-
-            <span>
-                <?php echo $nom; ?>
-            </span>
-
+            <span><?php echo $nom; ?></span>
         </h1>
-
 
         <h2>
             <?php echo $formation; ?>
         </h2>
 
-
         <p class="description">
-
             <?php echo $description; ?>
-
         </p>
 
-
-        <a href="doc.php" class="btn">
-
+        <a href="/doc/IMG_9539.jpg" class="btn">
             Voir mes projets
-
         </a>
 
-
-        <a href="contact.php" class="btn btn2">
-
+        <a href="/contact.php" class="btn btn2">
             Me contacter
-
         </a>
-
 
     </div>
-
-
-    <!-- ===== PHOTO ===== -->
 
     <div class="home-image">
 
         <div class="circle">
-
             💻
-
         </div>
 
     </div>
 
-    
-
 </section>
-
 
 </body>
 
