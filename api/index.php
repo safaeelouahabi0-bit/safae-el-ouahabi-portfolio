@@ -254,7 +254,7 @@ Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP."
             <?php echo $description; ?>
         </p>
 
-        <a href="/doc/IMG_9539.jpg" class="btn">
+        <a href="/doc/IMG_9539.JPG" class="btn">
             Voir mes projets
         </a>
 
