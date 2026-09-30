@@ -253,6 +253,12 @@ Je développe progressivement mes compétences en HTML, CSS, JavaScript et PHP."
         <p class="description">
             <?php echo $description; ?>
         </p>
+        <div>
+          <a href="/doc" class="btn">
+           tps
+
+        </a>  
+        </div>
 
         <a href="/doc/IMG_9539.JPG" class="btn">
            tp diagramme de classe
