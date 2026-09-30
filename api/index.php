@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name | Web Developer Portfolio</title>
+  <title>safae | Web Developer Portfolio</title>
   <meta name="description" content="Portfolio of Your Name, a web developer building modern, useful digital experiences." />
   <meta name="theme-color" content="#17131A" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -119,16 +119,6 @@ p{margin:0 0 1em}
 .info-card{padding:1.2rem 1.3rem}
 .info-card h3{font-size:1rem;color:var(--pink);margin-bottom:.35rem}
 .info-card p{margin:0;color:var(--muted);font-size:.93rem}
-
-/* Skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
-.skill-group{padding:1.6rem}
-.skill-group h3{font-size:1.15rem;margin-bottom:1rem}
-.skill-list{display:flex;flex-wrap:wrap;gap:.6rem}
-.skill-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .95rem;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid var(--border);font-size:.92rem;transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
-.skill-badge i{font-style:normal;color:var(--pink);font-size:.8rem}
-.skill-badge:hover{transform:translateY(-3px);background:rgba(185,161,255,.14);border-color:var(--lavender);box-shadow:0 8px 22px rgba(185,161,255,.22)}
-
 /* Projects */
 .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.6rem}
 .project-card{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:var(--radius);background:var(--card);border:1px solid var(--border);
@@ -201,8 +191,8 @@ p{margin:0 0 1em}
   <!-- ===== Header: navbar + scroll progress bar ===== -->
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Your Name, back to home">
-        <span class="brand__logo" aria-hidden="true">YN</span><span>Your Name</span>
+      <a class="brand" href="#home" aria-label="safae el ouahabi, back to home">
+        <span class="brand__logo" aria-hidden="true">safae</span><span>safae el ouahabi</span>
       </a>
       <button class="toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -210,7 +200,6 @@ p{margin:0 0 1em}
       <ul class="menu" id="navMenu">
         <li><a class="nav-link is-active" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#skills">Skills</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#exercises">Exercises</a></li>
       </ul>
@@ -231,7 +220,7 @@ p{margin:0 0 1em}
       <div class="container hero__inner">
         <div>
           <p class="status-badge"><span class="status-badge__dot" aria-hidden="true"></span>Open to opportunities</p>
-          <h1 class="hero__title" id="heroTitle">Hi, I'm <span class="text-gradient">Your Name</span>. I design and build modern web experiences.</h1>
+          <h1 class="hero__title" id="heroTitle">Hi, I'm <span class="text-gradient">safae</span>. I design and build modern web experiences.</h1>
           <p class="hero__role">Web Developer &middot; Computer Science Student</p>
           <p class="hero__bio">I create clean, responsive and accessible websites with HTML, CSS, JavaScript and PHP. I care about code that is easy to read and interfaces that are a pleasure to use.</p>
           <div class="hero__actions">
@@ -240,15 +229,15 @@ p{margin:0 0 1em}
             <a class="btn btn--ghost" href="docs/cv.pdf" download>Download CV</a>
           </div>
           <ul class="socials" aria-label="Social links">
-            <li><a class="social-link" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a class="social-link" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a class="social-link" href="https://www.instagram.com/your-username" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+           
+            <li><a class="social-link" href="www.linkedin.com/in/safae-ee-45764b3a2" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        
           </ul>
         </div>
         <!-- Replace images/profile.jpg with your photo -->
         <div class="hero__visual">
           <div class="profile-frame"><div class="profile-frame__inner">
-            <img src="images/profile.jpg" alt="Portrait of Your Name" width="400" height="500" onerror="this.style.display='none'" />
+            <img src="images/safae.jpg" alt="Portrait of Your Name" width="400" height="500" onerror="this.style.display='none'" />
           </div></div>
         </div>
       </div>
@@ -268,25 +257,14 @@ p{margin:0 0 1em}
             <ul class="tags" aria-label="Personal qualities"><li class="tag">Creative</li><li class="tag">Curious</li><li class="tag">Always learning</li></ul>
           </article>
           <div class="about__facts">
-            <article class="glass-card info-card"><h3>Education</h3><p>Your Degree, Your University</p></article>
-            <article class="glass-card info-card"><h3>Location</h3><p>Your City, Country</p></article>
-            <article class="glass-card info-card"><h3>Current focus</h3><p>Full-stack development with PHP and MySQL</p></article>
-            <article class="glass-card info-card"><h3>Career goal</h3><p>A junior web developer role in a team that values quality</p></article>
+            <article class="glass-card info-card"><h3>Education</h3><p>Digital Development — 2nd Year,  ISTA NTIC </p></article>
+            <article class="glass-card info-card"><h3>Location</h3><p>Tangier, Morocco</p></article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Skills (rendered by JavaScript) ===== -->
-    <section class="section reveal" id="skills" aria-labelledby="skillsTitle">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="skillsTitle">Skills and tech stack</h2>
-          <p class="section__subtitle">The tools I use to design, build and ship.</p>
-        </header>
-        <div class="skills" id="skillsGrid"></div>
-      </div>
-    </section>
+
 
     <!-- ===== Projects (rendered by JavaScript) ===== -->
     <section class="section reveal" id="projects" aria-labelledby="projectsTitle">
@@ -303,7 +281,7 @@ p{margin:0 0 1em}
     <section class="section reveal" id="exercises" aria-labelledby="exercisesTitle">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title" id="exercisesTitle">Exercises and labs</h2>
+          <h2 class="section__title" id="exercisesTitle">Exercises and Courses</h2>
           <p class="section__subtitle">Coursework I've completed, with files you can download.</p>
         </header>
         <div class="filters" id="filters" role="group" aria-label="Filter exercises by category"></div>
@@ -315,9 +293,9 @@ p{margin:0 0 1em}
 
   <footer class="site-footer">
     <div class="container footer__inner">
-      <p>&copy; <span id="year">2026</span> Your Name. All rights reserved.</p>
+      <p>&copy; <span id="year">2026</span> safae. All rights reserved.</p>
       <ul class="socials" aria-label="Social links">
-        <li><a class="social-link" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    
         <li><a class="social-link" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a class="social-link" href="https://www.instagram.com/your-username" target="_blank" rel="noopener noreferrer">Instagram</a></li>
       </ul>
@@ -329,51 +307,25 @@ p{margin:0 0 1em}
 /* =====================================================
    1. DATA: edit these arrays to change your content
    ===================================================== */
-const skills = {
-  Frontend: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-  Backend:  ['PHP', 'MySQL', 'PDO'],
-  Tools:    ['Git', 'GitHub', 'VS Code', 'Figma', 'WAMP']
-};
+
 
 const projects = [
   { title: 'Personal Developer Portfolio', text: 'A responsive portfolio with animated sections and a filterable exercise library.',
     image: 'images/project1.jpg', tags: ['HTML5', 'CSS3', 'JavaScript'],
-    github: 'https://github.com/your-username/portfolio', demo: 'https://your-username.github.io/portfolio' },
+    github: 'https://safae-el-ouahabi-portfolio.vercel.app/', demo: 'https://your-username.github.io/portfolio' },
   { title: 'Shiny Brand: Static E-commerce Website', text: 'A product catalogue with a responsive grid, product pages and a shopping-style layout.',
     image: 'images/project2.jpg', tags: ['HTML5', 'CSS3', 'Bootstrap'],
     github: 'https://github.com/your-username/shiny-brand', demo: 'https://your-username.github.io/shiny-brand' },
-  { title: 'HTML / CSS Projects', text: 'Layouts and components: flexbox and grid pages, forms, cards and responsive navigation.',
-    image: 'images/project3.jpg', tags: ['HTML5', 'CSS3', 'Grid'],
-    github: 'https://github.com/your-username/html-css-projects', demo: 'https://your-username.github.io/html-css-projects' },
-  { title: 'JavaScript Exercises', text: 'Small interactive apps practising DOM manipulation, events and form validation.',
-    image: 'images/project1.jpg', tags: ['JavaScript', 'DOM'],
-    github: 'https://github.com/your-username/javascript-exercises', demo: 'https://your-username.github.io/javascript-exercises' },
-  { title: 'PHP / MySQL Projects', text: 'Database-driven apps with CRUD features, secure PDO queries and server-side validation.',
-    image: 'images/project2.jpg', tags: ['PHP', 'MySQL', 'PDO'],
-    github: 'https://github.com/your-username/php-mysql-projects', demo: '#' }
 ];
 
 const filters = [
-  ['all', 'All'], ['html-css', 'HTML/CSS'], ['bootstrap', 'Bootstrap'], ['javascript', 'JavaScript'],
-  ['php-mysql', 'PHP/MySQL'], ['python', 'Python'], ['uml', 'UML']
+  ['all', 'All'], ['courses', 'Courses'], ['uml', 'UML']
 ];
 
 // files: { type: path }. Remove a type to hide its download button.
 const exercises = [
-  { title: 'Responsive Landing Page', meta: 'HTML/CSS · Semantic markup, Flexbox', category: 'html-css',
-    files: { pdf: 'docs/html-css-landing.pdf', png: 'images/html-css-landing.png', zip: 'docs/html-css-landing.zip' } },
-  { title: 'CSS Grid Gallery', meta: 'HTML/CSS · Grid, custom properties', category: 'html-css',
-    files: { pdf: 'docs/css-grid-gallery.pdf', zip: 'docs/css-grid-gallery.zip' } },
-  { title: 'Bootstrap Dashboard Layout', meta: 'Bootstrap · Grid system, components', category: 'bootstrap',
-    files: { pdf: 'docs/bootstrap-dashboard.pdf', png: 'images/bootstrap-dashboard.png', zip: 'docs/bootstrap-dashboard.zip' } },
-  { title: 'To-Do List App', meta: 'JavaScript · DOM, events, local storage', category: 'javascript',
-    files: { pdf: 'docs/js-todo.pdf', zip: 'docs/js-todo.zip' } },
-  { title: 'Form Validation', meta: 'JavaScript · Regular expressions', category: 'javascript',
-    files: { pdf: 'docs/js-form-validation.pdf', zip: 'docs/js-form-validation.zip' } },
-  { title: 'Student Management CRUD', meta: 'PHP/MySQL · PDO, prepared statements', category: 'php-mysql',
-    files: { pdf: 'docs/php-crud.pdf', zip: 'docs/php-crud.zip' } },
-  { title: 'Python Basics Workbook', meta: 'Python · Loops, functions, lists', category: 'python',
-    files: { pdf: 'docs/python-basics.pdf', zip: 'docs/python-basics.zip' } },
+  { title: 'Responsive Landing Page', meta: 'courses · Semantic markup, Flexbox', category: 'courses',
+    files: { pdf: 'docs/courses-landing.pdf', png: 'images/courses-landing.png', zip: 'docs/courses-landing.zip' } },
   { title: 'Library System Diagrams', meta: 'UML · Use case and class diagrams', category: 'uml',
     files: { pdf: 'docs/uml-library.pdf', png: 'images/uml-library.png' } }
 ];
@@ -383,15 +335,7 @@ const exercises = [
    ===================================================== */
 const $ = (selector) => document.querySelector(selector);
 
-function renderSkills() {
-  $('#skillsGrid').innerHTML = Object.entries(skills).map(([group, items]) => `
-    <article class="glass-card skill-group">
-      <h3>${group}</h3>
-      <ul class="skill-list">
-        ${items.map((s) => `<li class="skill-badge"><i aria-hidden="true">✦</i>${s}</li>`).join('')}
-      </ul>
-    </article>`).join('');
-}
+
 
 function renderProjects() {
   $('#projectsGrid').innerHTML = projects.map((p) => `
