@@ -238,7 +238,7 @@ p{margin:0 0 1em}
         <!-- Replace images/profile.jpg with your photo -->
         <div class="hero__visual">
           <div class="profile-frame"><div class="profile-frame__inner">
-            <img src="images/profile.jpg" alt="Portrait of Your Name" width="400" height="500" onerror="this.style.display='none'" />
+            <img src="images/safae.jpg" alt="Portrait of Your Name" width="400" height="500" onerror="this.style.display='none'" />
           </div></div>
         </div>
       </div>
