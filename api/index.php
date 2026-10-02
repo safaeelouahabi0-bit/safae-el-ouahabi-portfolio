@@ -325,10 +325,16 @@ const filters = [['all', 'All'], ['uml', 'UML'], ['courses', 'Courses']];
 
 // files: { type: path }. Remove a type to hide its download button.
 const exercises = [
-  { title: 'Library System Diagrams', meta: 'UML · Use case and class diagrams', category: 'uml',
-    files: { pdf: 'docs/uml-library.pdf', png: 'images/uml-library.png' } },
-  { title: 'Web Development Fundamentals', meta: 'Course · Notes and summaries', category: 'courses',
-    files: { pdf: 'docs/course-web-fundamentals.pdf', zip: 'docs/course-web-fundamentals.zip' } },
+  { title: 'Diagramme de classe', meta: 'UML · Use case and class diagrams', category: 'uml',
+    files: { pdf: 'docs/IMG_9539.JPG', png: 'images/uml-library.png' } },
+  { title: 'Diagramme de cas d\'utilisation', meta: 'UML ·  Use case and class diagrams', category: 'uml',
+    files: { pdf: 'docs/IMG_9540.JPG', zip: 'docs/course-web-fundamentals.zip' } },
+    { title: 'Diagramme de sequence', meta: 'UML · Use case and class diagrams', category: 'uml',
+    files: { pdf: 'docs/IMG_9541.JPG', png: 'images/uml-library.png' } },
+    { title: 'Diagramme d\'etat de transition ', meta: 'UML · Use case and class diagrams', category: 'uml',
+    files: { pdf: 'docs/IMG_9542.JPG', png: 'images/uml-library.png' } },
+    { title: 'Diagramme d\'activite', meta: 'UML · Use case and class diagrams', category: 'uml',
+    files: { pdf: 'docs/IMG_9543.JPG', png: 'images/uml-library.png' } },
   { title: 'Databases and SQL', meta: 'Course · Lectures and practice sheets', category: 'courses',
     files: { pdf: 'docs/course-databases.pdf', zip: 'docs/course-databases.zip' } },
   { title: 'Software Engineering', meta: 'Course · Slides and case studies', category: 'courses',
