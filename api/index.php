@@ -301,7 +301,7 @@ p{margin:0 0 1em}
         <li><a class="social-link" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a class="social-link" href="https://www.instagram.com/your-username" target="_blank" rel="noopener noreferrer">Instagram</a></li>
       </ul>
-      <p>Built with HTML, CSS &amp; JavaScript</p>
+     
     </div>
   </footer>
 
